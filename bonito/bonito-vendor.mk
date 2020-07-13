@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.callinfo-V1.0-java \
     vendor.qti.voiceprint-V1.0-java
 
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES ?= \
     vendor/google/bonito/proprietary/bin/smcinvoked:$(TARGET_COPY_OUT_SYSTEM)/bin/smcinvoked \
     vendor/google/bonito/proprietary/etc/cne/andsfCne.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/andsfCne.xml \
     vendor/google/bonito/proprietary/etc/permissions/cneapiclient.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/cneapiclient.xml \

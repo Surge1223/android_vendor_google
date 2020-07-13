@@ -88,7 +88,7 @@ PRODUCT_PACKAGES += \
     libMpeg4SwEncoder \
     libbtnv
 
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES ?= \
     vendor/google/crosshatch/proprietary/bin/smcinvoked:$(TARGET_COPY_OUT_SYSTEM)/bin/smcinvoked \
     vendor/google/crosshatch/proprietary/etc/permissions/cneapiclient.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/cneapiclient.xml \
     vendor/google/crosshatch/proprietary/etc/permissions/com.qualcomm.ltebc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.ltebc.xml \
@@ -400,7 +400,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/crosshatch/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so \
     vendor/google/crosshatch/proprietary/product/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so
 
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES ?= \
     vendor/google/crosshatch/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/google/crosshatch/proprietary/vendor/bin/KmInstallKeybox:$(TARGET_COPY_OUT_VENDOR)/bin/KmInstallKeybox \
     vendor/google/crosshatch/proprietary/vendor/bin/PktRspTest:$(TARGET_COPY_OUT_VENDOR)/bin/PktRspTest \

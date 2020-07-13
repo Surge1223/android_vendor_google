@@ -114,7 +114,7 @@ PRODUCT_PACKAGES += \
     libMpeg4SwEncoder \
     libbtnv
 
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES ?= \
     vendor/google/coral/proprietary/bin/iw:$(TARGET_COPY_OUT_SYSTEM)/bin/iw \
     vendor/google/coral/proprietary/bin/move_time_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_time_data.sh \
     vendor/google/coral/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
@@ -457,7 +457,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/coral/proprietary/product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/MyVerizonServices/lib/arm64/libmotricity.so \
     vendor/google/coral/proprietary/product/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so:$(TARGET_COPY_OUT_PRODUCT)/priv-app/SCONE/lib/arm64/libborders_scone_leveldb_jni.so
 
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES ?= \
     vendor/google/coral/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/google/coral/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/google/coral/proprietary/vendor/bin/athdiag:$(TARGET_COPY_OUT_VENDOR)/bin/athdiag \
